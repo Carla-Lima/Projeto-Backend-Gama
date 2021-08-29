@@ -1,0 +1,130 @@
+{
+    "openapi": "3.0.0",
+  
+    "info": {
+      "title": "API do projeto Gama-desafio",
+      "description": "essa é a api do projeto Gama-desafio",
+      "version": "0.0.1"
+    },
+  
+    "servers": [
+      {
+        "url": "http://localhost:5000",
+        "description": "ambiente de desenvolvimento"
+      }
+    ],
+  
+    "paths": {
+      "/register": {
+        "post": {
+          "summary": "Cadastro de candidato",
+          "description": "Rota de cadastro de usuário, recebe: nome, nome social, gênero, email,  entre outros.",
+          "tags": ["candidato"],
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "nome": {
+                      "type": "string"
+                    },
+                    "nomeSocial": {
+                      "type": "string"
+                    },
+                    "aniversario": {
+                      "type": "string"
+                    },
+                    "profissao": {
+                      "type": "string"
+                    },
+                    "estadoCivil": { 
+                      "type": "string"
+                    },
+                    "genero": {
+                      "type": "string"
+                    },
+                    "pcd": {
+                      "type": "string"
+                    },
+                    "cep": {
+                      "type": "string"
+                    },
+                    "bairro": {
+                      "type": "string"
+                    },
+                    "cidade": {
+                      "type": "string"
+                    },
+                    "uf": {
+                      "type": "string"
+                    },
+                    "logradouro": {
+                      "type": "string"
+                    },
+                    "numero": {
+                      "type": "string"
+                    },
+                    "complemento": {
+                      "type": "string"
+                    },
+                    "phone": {
+                      "type": "string"
+                    },
+                    "phone2": {
+                      "type": "string"
+                    },
+                    "email": {
+                      "type": "string"
+                    },
+                    "identidade": {
+                      "type": "string"
+                    },
+                    "CPF": {
+                      "type": "string"
+                    },
+                    "cargo": {
+                      "type": "string"
+                    },
+                    "veiculo": {
+                      "type": "string"
+                    },
+                    "habilitacao": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "examples": {
+                  "eu testando": {
+                    "value": {
+                      "nome": "Carla Souza",
+                      "nomeSocial": "Carla",
+                      "aniversario": "15/07/1994",
+                      "profissao": "Futura Dev Frontend",
+                      "estadoCivil": "Casada",
+                      "genero": "Feminino",
+                      "pcd": "Não",
+                      "cep": "00000-000",
+                      "bairro": "Antonio Cass",
+                      "cidade": "Petrolina",
+                      "uf": "PE",
+                      "logradouro": "rua...",
+                      "numero": "123",
+                      "complemento": "Apto 102",
+                      "phone": "99999999999",
+                      "phone2": "9999999999",
+                      "email": "carlaroza@gmail.com",
+                      "identidade": "111111111",
+                      "CPF": "000.000.000-00",
+                      "cargo": "Dev",
+                      "veiculo": "Sim",
+                      "habilitacao": "Sim"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
